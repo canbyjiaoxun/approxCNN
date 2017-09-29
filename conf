@@ -1,0 +1,9 @@
+[ Device ]
+NumComputeUnits = 1
+
+[ ComputeUnit ]
+NumWavefrontPools = 4
+
+[ SIMDUnit ]
+NumSIMDLanes = 16
+
