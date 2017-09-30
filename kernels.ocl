@@ -3,9 +3,11 @@
 typedef float float_tt;
 //typedef double float_tt;
 
+
 float_tt sigmod(float_tt in){
     return 1.0 / (1.0 + exp(-in));
 }
+
 
 // Approximate one to avoid use of the exponential function
 // which generates unsupported instructions on multi2sim
