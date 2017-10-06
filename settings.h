@@ -14,6 +14,7 @@
 #define M 10 // training sample counts in each iteration
 #define END_CONDITION 1e-3 // Not used due to exception
 #define DEF_TEST_SAMPLE_COUNT 1000
+#define NUM_TEST_IMAGE 300  //define the number of test sample 
 
 // 4. NN file control
 #define NN_DATA_FILENAME "nn_learned"
