@@ -73,7 +73,8 @@ namespace convnet {
 			std::cout << "number:" << swapEndien_32(number) << "\t" << fimage << std::endl;
 
 			std::uint32_t num_dataset = swapEndien_32(number);
-			num_dataset = 100;
+			//num_dataset = 200;
+                        num_dataset = NUM_TEST_IMAGE; 
 			std::uint32_t num_image = num_dataset;
 
 			if (num_partial_image != -1)
