@@ -77,15 +77,16 @@ int main(int argc, char* argv[]){
 	}
 
     //usleep(1000);
-	test_sample_count = 100;
-    printf("Testing with %d samples:\n", test_sample_count);
-//    const clock_t begin_time = clock();
-#ifdef GPU
-    n.test_single(test_x, test_y, test_sample_count);
-#else
-    n.test(test_x, test_y, test_sample_count, 1);
-#endif
-  //  cout << "Time consumed in test: " << float(clock() - begin_time) / (CLOCKS_PER_SEC / 1000 ) <<" ms"<<endl;
+        //Xun 10/07/17: change the testing size, but cannot exceed loaded size in mnist_parser.h
+	test_sample_count = 200;
+        printf("Testing with %d samples:\n", test_sample_count);
+    //    const clock_t begin_time = clock();
+    #ifdef GPU
+        n.test_single(test_x, test_y, test_sample_count);
+    #else
+        n.test(test_x, test_y, test_sample_count, 1);
+    #endif
+    //  cout << "Time consumed in test: " << float(clock() - begin_time) / (CLOCKS_PER_SEC / 1000 ) <<" ms"<<endl;
 
 	return 0;
 }
