@@ -2,3 +2,7 @@ To run the m2s on approxcnn, we need
 1) make main: compile the source file 
 2) source ./load_kernel.h: set the environmental variable of the opencl kernel, equals to load the opencl kernel in m2s command line 
 3) m2s ./main to run the multi2sim 
+
+
+To get assembly code: 
+m2s --si-disasm kernels.bin
