@@ -73,8 +73,8 @@ namespace convnet {
 			std::cout << "number:" << swapEndien_32(number) << "\t" << fimage << std::endl;
 
 			std::uint32_t num_dataset = swapEndien_32(number);
-			//num_dataset = 200;
-                        num_dataset = NUM_TEST_IMAGE; 
+                        //Xun 10/07/17: always load 500 images, but can reduce the actuall testing size in main.cpp 
+			num_dataset = 500;  
 			std::uint32_t num_image = num_dataset;
 
 			if (num_partial_image != -1)
